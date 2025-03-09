@@ -170,3 +170,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 agent_ip_list.txt
+master.ecosystem.config.js
+agent.ecosystem.config.js
