@@ -20,7 +20,7 @@ def sync_ip():
     data = {'name': AGENT_NAME, 'ip': public_ip}
     response = requests.post(MASTER_URL, json=data, headers=headers)
     if response.status_code == 200:
-        print('IP address synced successfully')
+        print(f'{time.strftime("%Y-%m-%d %H:%M:%S")} IP address synced successfully: {public_ip}')
     else:
         print('Failed to sync IP address' + response.text)
 
